@@ -11,30 +11,10 @@ public:
 		speed = BULLET_SPEED;
 	}
 	~CBULLET(){}
-	void Move();
 	float speed;
 };
 
 
-void CBULLET::Move(){
-switch(this->Direction){
-	case RIGTH:
-			this->Position.X+=speed;
-		break;
-	case LEFT:
-			this->Position.X-=speed;
-		break;
-	case UP:
-			this->Position.Y+=speed;
-		break;
-	case DOWN:	
-			this->Position.Y-=speed;
-		break;
-	default:
-		//Direction = NONE;
-	break;		
-	}	
-}
 
 
 #endif
